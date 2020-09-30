@@ -8,7 +8,7 @@ A dictionary of chinese idioms for fcitx5 pinyin
     2. Fetch `idiom.json` file from https://github.com/pwxcoo/chinese-xinhua/blob/master/data/idiom.json
     3. Convert `idiom.json` to the format recognized by libime: `python ./convert.py > idiom.raw`.
     4. Convert `idiom.raw` to the format recognized by fcitx5: `libime_pinyin_dict idiom.raw idiom.dict`
-    5. Copy the generated `idiom.dict` to `/usr/share/fcitx5/pinyin/dictionaries`.
+    5. Import dictionary in Fcitx5 config tool.
 
 ## Credit
 Dictionary data will fetch from https://github.com/pwxcoo/chinese-xinhua
