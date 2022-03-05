@@ -10,12 +10,6 @@ from typing import Iterator, Tuple
 from pypinyin import lazy_pinyin
 
 
-
-def pinyin_remove_tone(pinyin: str) -> str:
-    nfkd_form = unicodedata.normalize('NFKD', pinyin)
-    return nfkd_form.encode('ASCII', 'ignore').decode()
-
-
 def main():
     argument_parser = argparse.ArgumentParser('convert.py', usage='convert.py [JSON_FILE]')
     argument_parser.add_argument('file', type=argparse.FileType('r'))
